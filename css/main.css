@@ -8,6 +8,9 @@ p { color: red !important;}
 body {
 	background: #fafafa;
 }
+body.css3 {
+	background-color: black;
+}
 .reveal p,
 .reveal div,
 .reveal h2,
