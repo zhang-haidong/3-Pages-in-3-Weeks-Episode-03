@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>3 Day 3 Pages - Workflow</title>
+  <link rel="stylesheet" href="css/reveal.min.css"/>
+  <link rel="stylesheet" href="css/theme/beige.css" id="theme"/>
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+
+<div class="reveal">
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+
+    <section>
+      <p>3周3页面第3期第3课</p>
+      <h2>高效前端开发</h2>
+      <br>
+      <p>张海东</p>
+    </section>
+
+    <section>
+
+      <section>
+        <h3>工欲善其事，必先利其器</h3>
+        <img width="700" src="images/workflow/holbs.png" />
+      </section>
+
+      <section>
+        <h3>拯救 <span style="padding: 10px 15px; background: #333; color: #eee;">F5</span></h3>
+      </section>
+      
+      <section>
+        <h3>Guard</h3>
+        <h3>LiveReload</h3>
+      </section>
+
+      <section>
+        <h3>SASS</h3>
+        <ul>
+          <li>变量</li>
+          <li>嵌套</li>
+          <li>继承</li>
+          <li>混合</li>
+          <li>函数</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>SIP</h3>
+        <h3>FREE RULER</h3>
+      </section>
+
+      <section>
+        <h3>COMPASS</h3>
+        <a href="http://compass-style.org/reference/compass/">API</a>
+      </section>
+
+      <section>
+        <h3>SUBLIME</h3>
+        <ul>
+          <li>Package control</li>
+          <li>emmet</li>
+          <li>html/js/css pretty</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>ICOMOON</h3>
+        <a href="https://icomoon.io/">Download</a>
+      </section>
+
+    </section>
+
+    <section>
+      <h3>The end</h3>
+      <div>Q & A</div>
+    </section>
+
+  </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    center: true,
+    history: true,
+    // maxScale: 4,
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Parallax scrolling
+    // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+    // parallaxBackgroundSize: '2100px 900px',
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+    //  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+    //  { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    ]
+  });
+</script>
+</body>
+</html>

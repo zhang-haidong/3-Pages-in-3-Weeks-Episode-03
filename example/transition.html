@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>3 Pages in 3 days</title>
+  <style>
+    p
+    {
+    width: 60px;
+    background-color:yellow;
+    border:1px solid #ccc;
+    padding: 10px;
+    }
+	.rotate2 {
+		width: 400px;
+		background-color: black;
+		margin-top: 50px;
+		transition: all 2s;
+	}
+	.rotate2:hover {
+		transform: rotateY(180deg); 
+		-webkit-transform: rotateY(180deg);
+	}
+	.rotate1 {
+		margin-top: 40px;
+		transition: all 5s;	
+		width: 160px;
+		height: 5px;
+		padding: 2px;
+		background: yellow;
+		color: black;
+		text-align: center;
+		font-size: 30px;
+	}
+	.rotate1:hover {
+		background: red;
+		transform: rotate(360deg); 
+    /*transform: scale(3);	*/
+	}
+
+  </style>
+</head>
+<body>
+	2D rotation
+<p class="rotate1" class="animated_div">•</p>
+<p class="rotate2" class="animated_div">
+	<img src="../images/face2.png" width="400" alt="">
+</p>
+</body>
+</html>

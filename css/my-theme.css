@@ -1,0 +1,21 @@
+.reveal p,
+.reveal div,
+.reveal h2,
+.reveal h3,
+.reveal section {
+	font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+.reveal h2{
+	text-transform: uppercase;
+	padding: 0.5em 0;
+	border-top: 3px solid #319b42;
+	border-bottom: 3px solid #319b42;
+}
+.reveal h3 {
+	border-bottom: 3px solid #319b42;
+	padding: 0.5em 0;
+}
+h1, h2, h3 {
+	text-transform: uppercase !important;
+}

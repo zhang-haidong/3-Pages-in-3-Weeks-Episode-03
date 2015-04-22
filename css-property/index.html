@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CSS</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/black.css" id="theme">
+		<link rel="stylesheet" href="css/main.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="../lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="../lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
+					<h2>CSS Property</h2>
+					Si Xiaojing aka Sarah
+				</section>
+
+				<section>
+					<section>
+						<h3>Review</h3>						
+					</section>
+					<section>
+						<p>What's box size</p>
+						<div data-markdown>
+							```css
+							margin: 10px 30px;
+							border: 5px solid red;
+							padding: 5px 15px;
+							height: 30px;
+							width: 100px;
+							```
+						</div>
+						<ul class="puzzle">
+							<li>A.140*50</li>
+							<li>B.200*70</li>
+							<li>C.120*40</li>
+							<li>D.Uncertain</li>
+						</ul>
+						<p class="fragment">D</p>     
+					</section>
+
+					<section>
+						<p>What's box size</p>
+						<div data-markdown>
+							```css
+							display: block;
+							margin: 10px 30px;
+							border: 5px solid red;
+							padding: 5px 15px;
+							height: 30px;
+							width: 100px;
+							```
+						</div>
+						<ul class="puzzle">
+							<li>A.140*50</li>
+							<li>B.200*70</li>
+							<li>C.120*40</li>
+							<li>D.Uncertain</li>
+						</ul>
+						<p class="fragment">A</p>
+					</section>
+					<section>
+						<p>Where am I?</p>
+						<div data-markdown>
+		          <script type="text/template">
+		            ```html
+		             	<div>You</div>
+		             	<p style="float:left">I</p>
+		             	<p>She</p>
+		            ```
+		          </script>							
+						</div>					
+						<ul >
+							<li style="list-style:none">A. Left side of You</li>
+							<li style="list-style:none">B. Right side of You</li>
+							<li style="list-style:none">C. Left side of She</li>
+							<li style="list-style:none">D. Sit alone in second row</li>
+						</ul>
+						<p class="fragment">C</p>
+					</section>
+
+				</section>
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>BASIC</h2>
+					</section>
+					<section>
+						<p>Special properties for block and inline block</p>
+						<ul>
+							<li>min-width, max-width</li>
+							<li>min-height, max-height</li>
+						</ul>
+					</section>					
+					<section>
+						<h3>padding</h3>
+						<ul>
+							<li>padding-top</li>
+							<li>padding-right</li>
+							<li>padding-bottom</li>
+							<li>padding-left</li>
+						</ul>
+						<div data-markdown>
+							 <script type="text/template">
+		            ``` css
+		              padding: 5px 15px 0 10px;
+		            ```
+		            </script> 
+						</div>
+						<p class="fragment roll-in t-gray">padding: top right bottom left</p>
+						<div data-markdown class="fragment">
+							 <script type="text/template">
+		            ``` css
+		              padding: 5px 15px;
+		            ```
+		            </script> 
+						</div>
+						<p class="fragment roll-in t-gray">padding: top&bottom right&left</p>
+
+					</section>
+					<section>
+						<h3>margin</h3>
+						<ul>
+							<li>margin-top</li>
+							<li>margin-right</li>
+							<li>margin-bottom</li>
+							<li>margin-left</li>
+						</ul>
+						<div data-markdown>
+						 <script type="text/template">
+	            ``` css
+	              margin: 5px 15px 0 10px;
+	              margin: 10px 20px;
+	            ```
+	            </script> 
+						</div>
+						<p class="fragment roll-in t-gray">margin: 0 auto</p>
+						<p class="fragment roll-in t-gray">margin: auto</p>
+						<a class="fragment" target="_blank" href="../example/hello.html">Example</a>
+					</section>
+					<section data-transition="slide" data-background="#f6eb61" data-background-transition="zoom">
+						<h3>background</h3>
+						<ul>
+							<li>background-color</li>
+							<li>background-image</li>
+							<li>background-position</li>
+							<li>background-repeat</li>
+							<li>background-size</li>
+						</ul>
+						<p>background: color image repeat position</p>
+						<a href="http://0.0.0.0:8080" target="_blank">Example</a>
+					</section>
+					<section>
+						<h3>border</h3>
+						<ul>
+							<li>border-width</li>
+							<li>border-style</li>
+							<li>border-color</li>
+						</ul>
+						<p class="">border: width style color</p>
+						<a href="http://0.0.0.0:8080" target="_blank">Example</a>
+						<br>
+						<style>
+						.bor1 {display:inline-block;margin:40px auto!important;border-width:40px!important;border-style: solid!important;border-color:#36e #f60 #c00 #0f0!important;}
+						</style>
+						<div class="fragment roll-in bor1"></div>
+						<img src="../images/border-triangle.png" style="margin: 40px 0;" class="fragment" alt="" width="170">
+					</section>
+					
+					<section>
+						<h3>Length Units</h3>
+						<p>px, em, %, rem</p>
+							<div data-markdown>
+						 <script type="text/template">
+	            ``` css
+	              font-size: 20px;
+	              font-size: 1.2em;
+	              font-size: 120%;
+	              font-size: 1.5rem;
+	            ```
+	            </script> 
+						</div>
+						<p>em and % are relative units</p>
+						<p>rem will relative to root</p>
+						<a href="http://0.0.0.0:8080" target="_blank">Example</a>
+					</section>
+
+				<section>
+					<h3>OVERFLOW</h3>
+					<ul>
+						<li class="highlight-blue">visible</li>
+						<li>hidden</li>
+						<li>scroll</li>
+						<li>auto</li>
+					</ul>
+					<p class="fragment roll-in t-gray">overflow-x, overflow-y</p>
+				</section>					
+
+					<section>
+						<h3>color</h3>
+						<ul>
+							<li>English Name</li>
+							<li>#000000 - #FFFFFF</li>
+							<li>RGB(0, 128, 255)</li>
+						</ul>
+						<div data-markdown>
+						 <script type="text/template">
+	            ``` css
+	              color: red;
+	              color: #ff0000;
+	              color: rgb(255,0,0);
+	            ```
+	            </script> 
+						</div>						
+					</section>					
+
+					<section>
+						<h3>font</h3>
+						<ul>
+							<li>font-family</li>
+							<li>font-size</li>
+							<li>font-style</li>
+							<li>font-weight</li>
+							<li>line-height</li>
+							<li>letter-spacing</li>
+						</ul>
+						<p>font: style weight size/line-height family</p>
+						<a href="http://0.0.0.0:8080" target="_blank">Example</a>
+					</section>
+					
+					<section>
+						<h3>text</h3>
+						<ul>
+							<li>text-align</li>
+							<li>text-decoration</li>
+							<li>text-indent</li>
+							<li>text-transform</li>
+							<li>text-overflow</li>
+							<li>white-space</li>
+							<li>word-break</li>
+							<li>vertical-align</li>
+						</ul>
+					</section>
+					
+				</section>
+
+				<section>
+					<section>
+						<h3>list</h3>
+						<ul>
+							<li>list-style-type</li>
+							<li>list-style-position</li>
+						</ul> 
+					</section>
+					<section>
+						<h3>table</h3>
+						<ul>
+							<li>border-collapse</li>
+							<li>border-spacing</li>
+						</ul>
+						<img src="../images/border-collapse.gif" alt="">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>POSITION</h3>
+						<p>specifies the type of positioning method</p>
+						<p>relative|absolute|fixed|static</p>
+					</section>
+					<style>
+						.c-p {width:162px;height:162px;margin:40px auto 0!important;position:relative;}
+						.c-p-1 {width:160px;height:160px;border:1px solid #ccc!important;position:absolute;left:20px;top:-20px;line-height:160px!important;font-size:14px!important;}
+						.c-p-2 {width:160px;height:160px;border:1px dotted #666!important;position:relative;}
+					</style>
+					<section>
+						<h3 class="vs">RELATIVE</h3>
+						<p class="fragment roll-in t-gray">相对定位以自身为参照物做偏移</p>
+<pre class="fragment roll-in"><code>.c-p-1 {
+	width:100px;
+	height:100px;
+	border:1px dotted #ccc;
+	position:relative;
+	left:20px;
+	top:-20px;
+}</code></pre>
+						<div class="fragment roll-in c-p">
+							<div class="c-p-2"></div>
+							<div class="fragment roll-in c-p-1">relative</div>
+						</div>
+					</section>
+					<style>
+						.c-pa {width:300px;height:200px;margin:40px auto 0!important;position:relative;background-color:#333!important;}
+						.c-p-3 {width:160px;height:160px;border:1px solid #ccc!important;position:absolute;bottom:0;right:20px;line-height:160px!important;font-size:14px!important;}
+					</style>
+					<section>
+						<h3 class="vs">ABSOLUTE</h3>
+						<p class="fragment roll-in t-gray">绝对定位以最近的拥有position属性的祖先为参照物做偏移</p>
+<pre class="fragment roll-in"><code>.c-p-3 {
+	width:100px;
+	height:100px;
+	border:1px dotted #ccc;
+	position:absolute;
+	right:20px;
+	bottom:0;
+}</code></pre>
+						<div class="fragment roll-in c-pa">
+							<div class="c-p-4"></div>
+							<div class="fragment roll-in c-p-3">absolute</div>
+						</div>
+					</section>
+					<section>
+						<h3 class="vs">FIXED</h3>
+						<p>固对定位以浏览器内容显示区窗口为参照物做偏移</p>
+						<a href="http://www.slideshare.net/" target="_blank">Example</a>
+					</section>
+					<section>
+						<p>top, right, bottom, left</p>
+					</section>
+					<style>
+					.c-pz {width:300px;height:200px;margin:40px auto 0!important;position:relative;background-color:#333!important;}
+					.c-z {
+	width:160px;
+	height:160px;
+	position:absolute;
+	font-size:14px!important;
+	line-height:160px!important;
+}
+.c-z-1 {background-color:#f6eb61; color: black;top:0;left:0;z-index:2;}
+.c-z-2 {background-color:#319b42;right:0;bottom:0;z-index:1;}
+					</style>
+					<section>
+						<h3>Z-INDEX</h3>
+						<pre class="fragment roll-in"><code>.c-z {
+	width:100px;
+	height:100px;
+	border:1px dotted #ccc;
+	position:absolute;
+}
+.c-z-1 {background-color:#369;top:0;left:0;z-index:2;}
+.c-z-2 {background-color:#c00;right:0;bottom:0;z-index:1;}
+</code></pre>
+						<div class="fragment roll-in c-pz">
+							<div class="c-z c-z-1">z-index:2</div>
+							<div class="c-z c-z-2">z-index:1</div>
+						</div>
+					</section>
+				</section>
+
+
+				<section>
+					<section>
+						<h3>inherit</h3>
+						<p class="highlight-blue">font, text, line-height, color, list-style-*...</p>
+						<p>
+						share css with descendant
+						</p>
+					</section>
+	
+					<style>
+						#warp {color:red}
+						.c1 {color:blue; font-style:italic!important;}
+						.c2 {color:green}
+					</style>
+
+				</section>
+			
+				<section>
+					<section>
+						<h3>PSEUDO CLASSES</h3>
+						<p>
+							A pseudo-class is used to define a special state of an element.
+						</p>
+					</section>
+					<section>
+						<h3>a</h3>
+						<ol>
+							<li>:link</li>
+							<li>:visitied</li>
+							<li>:hover</li>
+							<li>:active</li>
+						</ol>
+						<div data-markdown>
+						 <script type="text/template">
+	            ``` css
+	              a:link { color: red; }
+	              a:visitied { color: black; }
+	              a:hover { color: blue; }
+	              a:active { color: pink; }
+	            ```
+	            </script> 
+						</div>						
+					</section>
+					<section>
+						<h3>input</h3>
+						<ul>
+							<li>:disabled</li>
+							<li>:enabled</li>
+							<li>:checked</li>
+							<li>:focus</li>
+						</ul>
+						<div data-markdown>
+						 <script type="text/template">
+	            ``` css
+	              input:disabled {  }
+	              input:enabled {  }
+	              input:checked { }
+	              input:focus {  }
+	            ```
+	            </script> 
+						</div>						
+
+					</section>
+					<section>
+						<h3>other</h3>
+						<ul>
+							<li>:first-child</li>
+							<li>:last-child</li>
+							<li>:nth-child(n)</li>
+						</ul>
+						<p>They can be used to any selector.</p>
+						<div data-markdown>
+						 <script type="text/template">
+	            ``` css
+	            li {margin-right: 20px;}
+	            li:last-child {margin-right: 0;}
+	            ```
+	            </script> 
+						</div>						
+
+						<img src="../images/last-child.png" alt="">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>PSEUDO ELEMENTS</h3>
+						<ul>
+							<li>::before</li>
+							<li>::after</li>
+						</ul>
+
+					</section>
+					<section>
+						<img src="../images/pseudo-element.png" alt="" width="500">
+					</section>
+					<section>
+						<h3>content</h3>
+						<p class="highlight-blue">
+							must set content property</p>
+							<p>even the content is empty </p>
+					</section>
+					
+					<section>
+						<div data-markdown>
+						<script type="text/template">
+							###USE
+
+							```css
+							.cp1::before {
+								content:"“";
+							}
+							.cp1::after {
+								content: "”"
+							}
+							```
+							```html
+							<div>content</div>
+							```
+						</script>
+						</div>
+						<div class="fragment roll-in cp1">content</div>
+						<img class="fragment" src="../images/border-triangle.png" alt="">
+					</section>
+				</section>
+
+				<section>
+					<h3>THE END</h3>
+					<p>Reference:</p>
+					<p>
+						<a href="http://www.w3schools.com">W3 School</a>
+						<br>
+						<a href="http://www.codeschool.com">codeschool</a>
+						<br>
+						<a href="http://codepen.io/">codepen</a>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: '../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../plugin/zoom-js/zoom.js', async: true },
+					{ src: '../plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

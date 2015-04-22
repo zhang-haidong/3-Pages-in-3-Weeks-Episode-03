@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>3 Day 3 Pages</title>
+  <link rel="stylesheet" href="css/reveal.min.css"/>
+  <link rel="stylesheet" href="css/theme/default.css" id="theme"/>
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body class="day2">
+	<div class="reveal">
+  <!-- Any section element inside of this container is displayed as a slide -->
+  	<div class="slides">
+  		<section>
+        <p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
+  			<h2>CSS3</h2>
+        <small>Presented by</small>
+        <p>Si Xiaojing aka Sarah</p>
+  		</section>
+        <section>
+          <div data-markdown>
+            <script type="text/template" >
+              border-radius
+              ```css
+                border-radius:10px;
+                -moz-border-radius:10px; /* old Firefox */
+                -ms-border-radius:10px; /* old IE */
+                -webkit-border-radius:10px; /* old Chrome */
+              ```
+            </script>
+          </div>
+          <p style="border: 1px solid #f04e98; border-radius: 8px;padding:10px;">border radius allow you add rounded corner</p>
+        </section>
+
+        <section>
+          <div data-markdown>
+            <script type="text/template" >
+              box-shadow
+              ```css
+              background-color:#ff9900;
+              -webkit-box-shadow: 0px 0px 8px 3px #888888; /* Old Chrome*/
+              -moz-box-shadow: 0px 0px 8px 3px #888888; /* Old Firefox */
+              box-shadow: 0px 0px 8px 3px #888888;
+              ```
+            </script>
+          </div>
+          <p style="background: #f04e98; #eaa353: black;box-shadow: 0px 0px 8px 4px white;border-radius: 8px; padding:5px;">This box has a white shadow</p>
+        </section>
+
+        <section>
+          <div data-markdown>
+            <script type="text/template" >
+              text-shadow
+              ```css
+                text-shadow: 2px 2px 3px #f04e98;
+                -moz-text-shadow: 2px 2px 3px #f04e98; /* old Firefox */
+                -webkit-text-shadow: 2px 2px 3px #f04e98; /* old Chrome */
+              ```
+            </script>
+          </div>
+          <p style="text-shadow: 5px 5px 5px #f04e98; color: white;">This text has shadow</p>
+        </section>  
+
+        <section>
+          <p>word-wrap</p>
+          <div data-markdown>
+          ```css
+            word-wrap: break-word;
+          ```
+          </div>
+          <img src="images/word-wrap.png" alt="">
+        </section>              
+
+
+        <section>
+          <p>opacity</p>
+        </section>
+        
+        <section>
+          <p>rgba</p>
+          <div data-markdown>
+          ```css
+            background-color: rgba(255, 255, 255, 0.3);
+          ```
+          </div>
+          <img src="images/rgba.png" alt="">
+        </section>
+
+        <section>
+          <p>2D & 3D transform</p>
+          <ul>
+            <li>translate()</li>
+            <li>rotate()</li>
+            <li>scale()</li>
+            <li>rotateX()</li>
+            <li>rotateY()</li>
+          </ul>
+          <br>
+          <a href="example/2d-transform.html" target="_blank">Example</a>
+        </section>
+
+        <section>
+          <p>transition</p>
+          <br>
+          <a href="example/transition.html" target="_blank">Example</a>
+        </section>
+
+        <section>
+          <p>@keyframes</p>
+          <br>
+          <a href="example/keyframe.html" target="_blank">Example</a>          
+        </section>
+        
+        <section>
+          <h3>CSS Compatibility</h3>
+          <ul>
+            <li>-moz-*</li>
+            <li>-webkit-</li>
+            <li>-ms-</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Thank you</h2>
+        </section>
+  	</div>
+  </div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    center: true,
+    history: true,
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Parallax scrolling
+    // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+    // parallaxBackgroundSize: '2100px 900px',
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+    //  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+    //  { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    ]
+  });
+</script>
+
+</body>
+</html>

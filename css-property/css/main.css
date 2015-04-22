@@ -1,0 +1,28 @@
+.reveal p,
+.reveal div,
+.reveal h2,
+.reveal h3,
+.reveal section {
+	font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+.reveal h2{
+	padding: 0.5em 0;
+	border-top: 3px solid #f04e98;
+	border-bottom: 3px solid #f04e98;
+}
+.reveal h3 {
+	border-bottom: 3px solid #f04e98;
+	padding: 0.5em 0;
+}
+.puzzle li{
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 30px;
+}
+.cp1::before {
+	content:"“";
+}
+.cp1::after {
+	content: "”"
+}

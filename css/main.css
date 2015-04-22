@@ -1,0 +1,112 @@
+/* #spare_time div p { color: purple; }
+#dance { color: black; }
+p { color: red !important;}
+.hobby { color: yellow; }
+.interest { color: blue; }
+#spare_time {display: none;}*/
+
+body {
+	background: #fafafa;
+}
+.reveal p,
+.reveal div,
+.reveal h2,
+.reveal h3,
+.reveal section {
+	font-family: "Open Sans", "Microsoft YaHei", "Hiragino Sans GB", "Hiragino Sans GB W3", "微软雅黑", "Helvetica Neue", Arial, sans-serif !important;
+	/*font-weight: 600;*/
+}
+section ul li {
+	line-height: 1.7em!important;
+}
+
+.reveal h2{
+	padding: 0.5em 0;
+	font-weight: 700;
+	/*border-top: 3px solid #f04e98;*/
+	/*border-bottom: 3px solid #f04e98;*/
+}
+.reveal h3 {
+	/*border-bottom: 3px solid #f04e98;*/
+	padding: 0.5em 0;
+	font-weight: 700;
+}
+.three-technical {
+	list-style: none;
+}
+.each-day {
+	text-align: left;
+	padding-top: 30px !important;
+}
+.each-day span {
+	vertical-align: top;
+	margin-right: 30px;
+}
+.three-technical li {
+	list-style: none;
+	background-color: #f6eb61;
+	padding: 40px;
+	margin: 10px;
+	color: #333;
+}
+.my-div{
+  width:100px;
+  height:100px;
+  background:#f04e98;
+  transition:width 2s;
+  margin-left: 50px !important;
+}
+
+.my-div:hover { width:300px; }
+
+.font-pink {
+	color: #4E8DD1;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.what-is-html {
+	text-align: left;
+}
+.what-is-html strong {
+	color: #f04e98;
+}
+.text-right {
+	text-align: right;
+}
+.text-code code{
+	background-color: #222;
+	font-size: 26px!important;
+	padding: 15px 40px!important;
+	line-height: 1.4!important;
+	text-align: left;
+	border-radius: 15px;
+	color: #fff;
+	word-wrap: break-word!important;
+}
+.text-code-super {
+	font-size: 70px!important;
+}
+.text-code-super span {
+	color: orange;
+}
+.text-code-middle {
+	font-size: 45px!important;
+	line-height: 1.3em!important;
+}
+.text-code-middle em{
+	width: 45%;
+	text-align:right;
+	padding-right: 5%;
+	display: inline-block;
+	float:left;
+}
+.text-code-middle span {
+	color: orange;
+	text-align: left;
+	float:left;
+}
+

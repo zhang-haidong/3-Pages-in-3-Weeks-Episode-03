@@ -1,0 +1,175 @@
+
+body {
+  font-size: 18px;
+  color: #333;
+  background-color: #566472;
+}
+p {
+  line-height: 1.4em;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.text-center {
+  text-align: center;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+form.find-agent {
+  width: 500px;
+  margin: 4% auto;
+}
+
+form.find-agent input {
+  color: white;
+  font-size: 1em;
+}
+
+form.find-agent input:-moz-placeholder {
+  color: white;
+}
+form.find-agent ::-webkit-input-placeholder {
+  color: white;
+}
+form.find-agent input[type='text'] {
+  width: 360px;
+  padding: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+form.find-agent input[type='submit'] {
+  width: 100px;
+  padding: 20px 0;
+  background: #6cdcac;
+  border: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.welcome {
+  padding: 3% 0 8% 0;
+  color: white;
+  background: url("01.jpg") no-repeat bottom;
+  background-size: cover;
+}
+
+.welcome .user {
+  clear: both;
+  width: 300px;
+}
+.welcome .user a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10%;
+  word-break: break-word;
+}
+.welcome .user a.sign-up {
+  display: inline-block;
+  border: 1px solid #f1f1f1;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.welcome h1 {
+  clear: both;
+  margin: 14% 0 10px 0;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+
+.process, .why-us, .team-member, .search {
+  background-color: white;
+  padding-bottom: 10%;
+}
+.process h1, .why-us h1, .team-member h1, .search h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 8% 0;
+}
+.process h2, .why-us h2, .team-member h2, .search h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.process {
+  padding: 5% 0 8% 0;
+  text-align: center;
+}
+.process hr {
+  width: 70%;
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+  margin-bottom: -52px;
+}
+.process li {
+  float: left;
+  width: 300px;
+  padding: 0 20px;
+  margin: 20px 0;
+}
+.process li .number {
+  border: 1px solid #ccc;
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  color: white;
+  border-radius: 30px;
+  line-height: 62px;
+  margin-bottom: 20px;
+}
+.process li:first-child .number {
+  background-color: #6cdcac;
+}
+.process li:nth-child(2) .number {
+  background-color: #5582AA;
+}
+.process li:last-child .number {
+  background-color: #E89C4A;
+}
+
+.process li span {
+  display: inline-block;
+}
+.process li .descrption {
+  color: #666;
+}
+footer {
+  padding: 24px;
+  background-color: black;
+  color: #eee;
+  text-align: center;
+  font-size: 14px;
+}
+
+/*
+@media (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .process li {
+    width: 95%;
+  }
+  .why-us ul li {
+    width: 94%;
+    margin: 20px 3%;
+  }
+  form.find-agent {
+    width: 80%;
+  }
+}
+*/

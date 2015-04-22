@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>How to collaborate with design/developer</title>
+	<link rel="stylesheet" href="css/reveal.min.css"/>
+	<link rel="stylesheet" href="css/theme/simple.css" id="theme"/>
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css"/>
+	<link rel="stylesheet" href="css/my-theme.css"/>	
+</head>
+<body>
+	<div class="reveal">
+  <!-- Any section element inside of this container is displayed as a slide -->
+  
+  	<div class="slides">
+  		<section>
+  			<p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
+  			<h2>How to collaborate</h2>
+  			<small>Presented by</small>
+        <p>Si Xiaojing aka Sarah</p>
+  		</section>
+
+			<section>
+        <section>
+				  <h3>Communication</h3>
+          <img src="images/communication.jpg" alt="">
+        </section>
+        <section style="text-align: left;">
+          <p>UI Dev: What if the title is too long?</p>
+          <p>UX: Ahh, I didn't consider that...</p>
+        </section>
+        <section style="text-align: left;">
+          <p>UX: Why the border corner is not rounded in IE?</p>
+          <p>UI Dev: ...Because it doesn't support...</p>
+          <p>UX: Can you solve that?</p>
+          <p>UI Dev: OK...But it will take effort...</p>
+        </section>
+
+        <section style="text-align: left;">
+          <p>QA: hi, I found here is 1px less.</p>
+          <p>UI DEV: ......T_T</p>
+        </section>
+
+			</section>
+			
+			<section>
+  				<h3>Do you ever want to kill each other?</h3>
+  				<img src="images/Quarreling.jpg" alt="">
+  		</section>
+
+	  	<section>
+        <section>
+          <h3>How UI developer works?</h3>
+        </section>
+        <section>
+          <h3>Our workflow</h3>
+        </section>
+  			<section>
+  				<h3>Designer works on lowfi</h3>
+  				<img src="images/lowfi.png" alt="">	
+  			</section>
+  			<section>
+  				<h3>showcase to ui developer</h3>
+          <div>ask feedback</div>
+  				
+  			</section>
+
+  			<section>
+  				<h3>Designer works on highfi</h3>
+  				<img src="images/highfi.png" alt="">	
+  			</section>
+  			<section>
+  				<h3>Pass design to developer</h3>
+  				<img src="images/mark.png" alt="">	
+  			</section>
+
+  			<section>
+  				<h3>But...</h3>
+  				<p>That only works for non-responsive website development.</p>
+  			</section>
+  		</section>
+
+      <section>
+        <p>Things become more complex when doing responsive</p>
+        
+      </section>
+  		<section>
+        <section>
+          <h3>Style guide</h3>    
+          <ul>
+            <li>Standards for implementation and design of website</li>
+            <li>Establishes and enforces style to improve communication</li>
+          </ul>      
+        </section>
+        <section>
+          <img src="images/style-guide.png" alt="">         
+        </section>
+        <section>
+          <div>Style guide likes a rule for developer and designer</div>
+        </section>
+
+  		</section>
+
+			<section>
+        <section>
+          <h3>in real project</h3>
+        </section>
+	  		<section>
+	  			<p>varibles.less</p>
+	  			<img src="images/good-practise1.png" alt="">
+	  		</section>
+					 
+	  		<section>  			
+	  			<p>common.less</p>
+	  			<img src="images/good-practise2.png" alt="" width="500">
+	  		</section>
+
+        <section>
+          <h3>Benifit</h3>
+          <ul>
+            <li>Can avoid magic number</li>
+            <li>Make css easier to maintain</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>So easy!</h3>
+        </section>
+				
+			</section>
+
+      <section>
+        <h3>The best way</h3>
+        <p class="fragment">Let UX learn UI development</p>
+        <p class="fragment">Or...</p>
+        <p class="fragment">Let UI dev learn design</p>
+        <p class="fragment">impossible...</p>
+      </section>
+      <section>
+        <section>
+          <h3>3 strategies</h3>
+          <p>To collaborate with designer without killing each other </p>
+
+        </section>
+        <section>
+          <ul>
+            <li>Provide more detail on design</li>
+            <li>Pair with UX, if can grab him/her</li>
+            <li>Make style guide, and follow it</li>
+          </ul>
+        </section>
+
+      </section>	
+      <section>
+        <h3>Thank you</h3>
+        <br>
+        <p>Hope you have a good journey working with designer</p>
+      </section>	 
+
+  	</div>
+
+  </div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    center: true,
+    history: true,
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Parallax scrolling
+    // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+    // parallaxBackgroundSize: '2100px 900px',
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+    //  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+    //  { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    ]
+  });
+</script>
+	
+</body>
+</html>
