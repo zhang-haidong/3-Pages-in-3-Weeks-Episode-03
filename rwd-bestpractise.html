@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>ThoughtWorks in a nutshell</title>
+
+		<link rel="stylesheet" href="css/reveal.min.css"/>
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme"/>
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css"/>
+		<link rel="stylesheet" href="css/main.css"/>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section class="bg-lightgray darkgray">
+					<h2>响应式网页设计及实践</h2>
+                    <br/>
+					<p>张海东</p>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>1、Patterns and Practises</h3>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>1.1 Layouts</h3>
+					<div>
+					<ul>
+						<li>Mostly fluid</li>
+						<li>Column drop</li>
+						<li>Layout shifter</li>
+						<li>Tiny tweaks</li>
+						<li>Off canvas</li>
+					</ul>
+					</div>
+					<br/>
+					<a href="http://www.lukew.com/ff/entry.asp?1514" target="_blank">Learn more</a>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>1.2 Pixels</h3>
+					<ul>
+						<li>device pixel</li>
+						<li>css pixel</li>
+						<li>pixel per inch</li>
+						<li>device pixel ratio</li>
+					</ul>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>1.3 Media Query</h3>
+					<div data-markdown class="scripts">
+						<script type="template">
+						  ```HTML
+<link rel="stylesheet" media="screen" href="css/main.css" />	
+						  ```
+						  ```CSS
+@media screen and (max-width: 400px) {
+   h1 { font-size: 30px; }
+}
+						  ```
+						</script>
+					</div>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>1.4 em & rem</h3>
+					<h5>dynamic sizes</h5>
+					<div data-markdown class="scripts">
+		              <script type="text/template">
+		                ```CSS		                
+body {
+	font-size: 100%;
+}
+.wrapper {
+	font-size: 0.625em;
+	width: 50em;
+}
+.aside {
+	font-size: 1.2em;
+	width: 20rem;
+}
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 80%;
+    }
+}
+		                ```
+		              </script>
+		           </div>
+					
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>1.5 Box-sizing</h3>
+					<h5>Optimise the box modules</h5>
+					<div data-markdown class="scripts">
+		              <script type="text/template">
+		                ```CSS		                
+col-4-1 {
+  box-sizing: border-box;
+  width: 25%;
+  padding: 10px;
+}
+		                ```
+		              </script>
+		           </div>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>1.6 Images</h3>
+					<h5>Flexible image and performance</h5>
+					<div data-markdown class="scripts">
+		              <script type="text/template">
+		                ```CSS		                
+img { max-width: 100%; }
+
+<img src="image.jpg" data-src-600px="image-600px.jpg" 
+data-src-800px="image-800p">
+@media (min-width:600px) {
+  img[data-src-600px] {
+    content: attr(data-src-600px, url);
+  }
+} 
+@media (min-width:800px) {
+  img[data-src-800px] {
+    content: attr(data-src-800px, url);
+  }
+}
+		                ```
+		              </script>
+		           </div>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>1.7 Tables</h3>
+					<a href="http://css-tricks.com/examples/ResponsiveTables/responsive.php" target="_blank">Example</a>
+					<div data-markdown class="scripts">
+		              <script type="text/template">
+		                ```CSS		                
+td:before { 
+	position: absolute;
+	width: 45%;  
+}
+
+td:nth-of-type(1):before { content: "First Name"; }
+td:nth-of-type(2):before { content: "Last Name"; }
+		                ```
+		              </script>
+		           </div>
+				</section>
+				
+				<section class="bg-lightgray darkgray">
+					<h3>1.8 Some other examples</h3>
+					<br/>
+					<a href="http://codepen.io/bradfrost/full/pgjav" target="_blank">Slide</a>
+					<a href="http://codepen.io/chriscoyier/full/gHnGD" target="_blank">Tabs</a>
+					<a href="http://codepen.io/bradfrost/full/dlwBD" target="_blank">Accordion</a>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>1.9 Typography</h3>
+					<ul>
+						<li>Font-size</li>
+						<li>Line-height</li>
+						<li>Reading range</li>
+					</ul>
+					<br/>
+					<br/>
+					<a href="https://ia.net/know-how/responsive-typography-the-basics" target="_blank">Learn more</a>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>1.10 Break points</h3>
+					<img src="http://jbcdn2.b0.upaiyun.com/2012/11/6-major-breakpoints.jpg" alt="" /> <br>
+					<a href="http://screensiz.es/phone" target="_blank">Device size</a>
+				</section>
+				
+				<section class="bg-lightgray darkgray">
+					<h3>2、Interaction methods</h3>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>2.1 Designing for touch</h3>
+					<ul>
+						<li>Rule of thumb</li>
+						<li>Navigition zone</li>
+						<li>Tablets, take your corners</li>
+						<li>Too big to fail(Minimum of 44x44.)</li>
+						<li>Don't crowd me</li>
+					</ul>
+					<br/>
+					<br/>
+					<a href="http://www.creativebloq.com/design/designing-touch-2123037" target="_blank">Learn more</a>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>2.2 Focus on gestures</h3>
+					<ul>
+						<li>Navigation system</li>
+						<li>Something natural, that reacted like an extension of your fingers.</li>
+					</ul>
+					<br/>
+					<br/>
+					<a href="http://www.tuicool.com/articles/YNVVFf" target="_blank">Learn more</a>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>2.3 Designing for device orientation</h3>
+					<a href="http://pttrns.com/?did=1&scid=5" target="_blank">Examples: designs</a>
+					<a href="http://bradfrost.github.io/this-is-responsive/patterns.html" target="_blank">Examples: patterns</a>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>3、Screen clarity</h3>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>3.1 Pixel fitting</h3>
+					<br/>
+					<a href="http://dcurt.is/pixel-fitting" target="_blank">Learn more</a>
+				</section>
+				
+				<section class="bg-lightgray darkgray">
+					<h3>3.2 Viewport Sized Typography</h3>
+					<h5>CSS3: vw,vh,vmin,vmax</h5>
+					<div data-markdown class="scripts">
+		              <script type="text/template">
+		                ```CSS
+h1 {
+  font-size: 5.9vw;
+}
+h2 {
+  font-size: 3.0vh;
+}
+p {
+  font-size: 2vmin;
+}
+		                ```
+		              </script>
+		           </div>
+					
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>3.3 Icon</h3>
+					<h5>IconMoon</h5>
+					<br/>
+					<a href="https://icomoon.io/app/#/select" target="_blank">Learn more</a>
+				</section>
+
+				<section class="bg-lightgray darkgray">
+					<h3>Tools</h3>
+					<a >Chrome extions: viewport resizer</a> <br>
+					<a href="http://caniuse.com/#search=box-sizing" target="_blank">Can i use?</a> <br>
+					<a href="http://gridpak.com/" target="_blank">Column layout</a>
+				</section>
+
+				<section style="text-align: left;" class="bg-white">
+					<h2>THE END</h2>
+					<h3>Thank you</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    center: true,
+    history: true,
+    // maxScale: 4,
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Parallax scrolling
+    // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+    // parallaxBackgroundSize: '2100px 900px',
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+    //  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+
+      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+    //  { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    ]
+  });
+</script>
+
+	</body>
+</html>
