@@ -2,7 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>3周3页面Workshop - 第三期</title>
+  <title>3周3页面Workshop - 第五期</title>
+  
   <link rel="stylesheet" href="css/reveal.min.css"/>
   <link rel="stylesheet" href="css/theme/beige.css" id="theme"/>
   <!-- For syntax highlighting -->
@@ -17,12 +18,7 @@
 
     <section>
       <p><strong>Thought</strong>Works<sup style="font-size: 14px">&reg;</sup></p>
-      <h2>3周3页面Workshop<br>第3期</h2>
-      <br>
-      <small>教练：</small>
-      <p>
-        司晓静,张海东
-      </p>
+      <h2>3周3页面Workshop<br>第5期</h2>
     </section>
 
     <section>
@@ -442,34 +438,21 @@
     <section>
       <section>
         <h2>CSS</h2>  
-        <p><span class="font-pink">C</span>ascading <span class="font-pink">S</span>tyle <span class="font-pink">S</span>heet.</p>
+        <p style="font-variant: small-caps;">Cascading Style Sheet</p>
       </section>
-
-      
 
       <section>
         <h3>HTML</h3>
-        <img src="images/house-withoutcss.jpg" alt="" />
+        <img width="600" src="images/house-withoutcss.jpg" />
       </section>
       
       <section>
         <h3>HTML+CSS</h3>
-        <img width="600" src="images/house-withcss.jpg" alt="" />
+        <img width="600" src="images/house-withcss.jpg" />
       </section>
 
-      <!-- <section>
-        <h3>HTML TAGS REVIEW</h3>
-        <img width="500" src="images/jimu-tag.jpg" alt="" />
-      </section> -->
-
-      <section>
-        <h3>"CSS, 史上最简单的语言"</h3>
-        <h4 class="text-right">－白岩松</h4>
-      </section>
-      
       <section>
         <h3>CSS怎么写？</h3>
-        <img src="images/thinking.png" width="500" />
       </section>
 
       <section>
@@ -502,7 +485,7 @@
       </section>
 
       <section>
-        html
+        HTML
         <div data-markdown class="text-code">
         <script type="text/template">
           ```HTML
@@ -545,56 +528,25 @@
       </section>
 
     </section>
+
+    <section>
+      <h2>CSS小游戏</h2>
+      <div style="background: #bbb; text-align: left; border: 5px solid; color: #666; width: 300px; margin-left: 200px; margin-right: auto; padding-top: auto; padding-bottom: 10px; height: 100px;" >猜猜我的样式。
+      </div>
+    </section>
+
     <section>  
-      <section>
-        <h3>ID & CLASS</h3>
-      </section>
 
       <section>
-        <h3>ID</h3> 
-        <div data-markdown class="text-code">
-        <script type="text/template">
-          ```HTML
-          <div id="kitty" >I am Kitty.</div>
-
-          <div id="tom" >Iam Tom.</div>
-          ```
-        </script>
-        </div>
-      </section>
-
-      <section>
-        <h3>CLASS</h3> 
-        <div data-markdown class="text-code">
-        <script type="text/template">
-          ```HTML
-          <div id="kitty" class="cat" >I am Kitty.</div>
-
-          <div id="tom" class="cat" >I am Tom.</div>
-          ```
-        </script>
-        </div>
-      </section>
-
-      <section>
-        <h3>CLASSES</h3> 
-        <div data-markdown class="text-code">
-        <script type="text/template">
-          ```HTML
-          <div id="kitty" class="cat animal" >I am Kitty.</div>
-
-          <div id="tom" class="cat animal" >I am Tom.</div>
-          ```
-        </script>
-        </div>
-      </section>
-
-      <section>
-        <h3>CSS选择器</h3>
+        <h2>选择器</h2>
         <ul>
-          <li>Tag</li>
-          <li>Class</li>
-          <li>ID</li>
+          <li>元素</li>
+          <li>类和ID</li>
+          <li>属性</li>
+          <li>后代</li>
+          <li>关系</li>
+          <li>伪类和伪元素</li>
+          <li>通配</li>
         </ul>
       </section>
 
@@ -656,16 +608,26 @@
       </section>
 
       <section>
-        <h3>CSS小游戏</h3>
-        <img src="images/css-game.png" width="600" style="border:0;"/>
+        <h3>多个CLASS</h3> 
+        <div data-markdown class="text-code">
+        <script type="text/template">
+          ```HTML
+          <div id="kitty" class="cat animal" >I am Kitty.</div>
+
+          <div id="tom" class="cat animal" >I am Tom.</div>
+          ```
+        </script>
+        </div>
       </section>
+
+      
 
     </section>
 
     <section>
       <section>
-        <h3>CSS放在哪里？</h3>
-        <img src="images/thinking.png" width="500" />
+        <h2>CSS放在哪里？</h2>
+        <!-- <img width="600" src="images/thinking.png" /> -->
       </section>
 
       <section>
@@ -702,7 +664,7 @@
       <section>
         <div data-markdown class="text-code">
         <script type="text/template">
-          ### 3. 链接专门的CSS文档
+          ### 3. 链接外部CSS文件
           ```HTML
           <head>
             <link rel="stylesheet" href="stylesheet/main.css">
@@ -724,9 +686,9 @@
         </div>
       </section>   
       
-      <section>
+      <!-- <section>
         <h3>3种方式哪家强？请抢答。</h3>
-        <img src="images/wangxiaoya.jpg" width="500" />
+        <img width="500" src="images/wangxiaoya.jpg" />
       </section>
 
       <section>
@@ -759,36 +721,24 @@
           a.a-link:hover {color:#FF00FF!important;}  /* mouse over link */
           a.a-link:active {color:#0000FF!important;}  /* selected link */
        </style>
-      </section>
+      </section> -->
 
     </section>
 
     <section>
+        <h3>"我认为CSS是最复杂的语言。"</h3>
+        <p style="text-align: right" >-- 毛PM</p>
+    </section>
+
+    <section>
       <section>
-        <h3>CSS 作用优先级</h3>
-        <div>tag < class< id < inline</div>
+        <h2>选择器 特殊性</h2>
+        <p>Specificity</p>
       </section>       
 
       <section>
-        <h3>猜颜色</h3>
-        <div data-markdown class="text-code">
-          <script type="text/template">
-            ```html
-            <p class="hobby">I love runing.</p>
-            ```
-            ``` CSS
-            p { color: red; }
-            .hobby { color: green; }
-            ```
-          </script>
-        </div>
-        <br>
-        <p class="fragment" data-fragment-index="0" style="color:green;">I love runing</p>
-      </section>  
-
-      <section>
          <h3>猜颜色</h3>
-        <div data-markdown class="text-code">
+         <div data-markdown class="text-code">
           <script type="text/template">
             ```html
             <p class="interest hobby">I love dance</p>
@@ -828,28 +778,33 @@
           <p class="fragment" data-fragment-index="0" style="color:purple">Purple</p>
       </section>  -->           
 
-
       <section>
         <h3>猜颜色</h3>
         <div data-markdown class="text-code">
           <script type="text/template">
             ```html
             <div id="spare_time">
-                <p id="dance" class="hobby interest" style="color: orange">
+                <p id="dance" class="hobby interest" >
                   I love dance
                 </p>           
             </div>
             ```
             ``` CSS
-            p { color: red; }
-            #dance { color: black; }            
-            .hobby { color: yellow; }
-            .interest { color: blue; }
+            #spare_time .hobby { color: red; }
+            #dance { color: black; }
+            p.hobby.interest { color: yellow; }
+            p[id='dance'] { color: blue; }
             ```            
           </script>
+
         </div>
-          <p class="fragment" data-fragment-index="0" style="color:orange">Orange</p>
-      </section>            
+        <p class="fragment" data-fragment-index="0" style="color:orange">Red</p>
+      </section>
+
+      <section>
+        <h3>选择器的优先级到底是怎么判断的？</h3>
+        <img width="600" src="images/thinking.png" />
+      </section>
 
       <!-- <section>
         <h3>Guess color</h3>
@@ -876,18 +831,51 @@
       </section>   -->          
       
       <section>
-        <h3>tag < class < id < inline</h3>
+        <h3>0 0 0 0</h3>
       </section>
 
       <section>
-        <h3>合理地编写id和class</h3>
+        <h3>层叠</h3>
+        <ul>
+          <li>1. 找到所有规则及相匹配的选择器。</li>
+          <li>2. 按来源进行权重排序。</li>
+          <li>3. 按important分组。</li>
+          <li>4. 计算特殊性。</li>
+          <li>5. 按出现顺序。</li>
+        </ul>
+      </section>
+  
+      <section>
+        <div data-markdown class="text-code">
+          <script type="text/template">
+            ``` CSS
+            body table tr[id="totals"] td ul > li { color: red; }
+            ul.list li#answer { color: black; }
+            ```            
+          </script>
+        </div>
       </section>
 
     </section>
     
     <section>
-      <h3>元素围观 <span class="fragment">+</span> <span class="fragment">布局</span></h3>
-      <img src="images/jimu.png" alt="" width="650">
+      <section>
+        <h2>字体</h2>
+      </section>
+
+      <section>
+        <h3>字体</h3>
+        <h3>字形</h3>
+        <h3>通用字体系列</h3>
+      </section>
+    </section>
+
+    <section>
+      <h3>文本</h3>
+    </section>
+
+    <section>
+      <h3>基本视觉格式化</h3>
     </section>
     
     <section>
@@ -917,48 +905,37 @@
       </section>
 
       <section>
-        <h3>显示(display)</h3>
+        <h3>元素类型</h3>
       </section>
 
       <section>
         <h3 style="font-size: 40px;">block，inline-block，inline元素？</h3>
-        <img src="images/chensizhe.jpg" alt="">
+        <img width="500" src="images/chensizhe.jpg" alt="">
       </section>
 
       <section>
-        <h3 style="font-size: 40px;">inline元素</h3>
-        <ul>
-          <li>不能设置元素的宽高；</li>
-          <li>可以设置左右边距，不能设置上"下"边距；</li>
-          <li>显示在”一行里面“；</li>
-        </ul>
-        <br>
-        <br>
-        <p>span,a,label</p>
-      </section>
-
-      <section>
-        <h3 style="font-size: 40px;">block元素</h3>
-        <ul>
-          <li>可以设定元素的宽高；</li>
-          <li>可以设定所有边距；</li>
-          <li>默认左右两边不能有元素；</li>
-        </ul>
-        <br>
-        <br>
+        <h3>Block元素</h3>
         <p>div,h1,p,ul,ol,form</p>
       </section>
 
       <section>
-        <h3 style="font-size: 40px;">inline-block元素</h3>
-        <ul>
-          <li>可以设定元素的宽高；</li>
-          <li>可以设定所有边距；</li>
-          <li>显示在”一行里面“；</li>
-        </ul>
-        <br>
-        <br>
+        <h3>Inline元素</h3>
+        <p>span,a,label</p>
+      </section>
+
+      <section>
+        <h3 style="font-size: 40px;">Inline-block元素</h3>
         <p>img,input,button</p>
+      </section>
+
+      <section>
+        <h3>替换元素</h3>
+        <p>img, input</p>
+      </section>
+
+      <section>
+        <h3>非替换元素</h3>
+        <p>span,a,label</p>
       </section>
       
       <section>
@@ -979,53 +956,51 @@
       </section> -->
     </section>
     
-    <section>
-      <h3>定位</h3>
-    </section>
     
-    <!-- Action - 1 HTML -->
-
+    
     <section>
       <section>
-        <h3>定位</h3>
-        <p>positon: relative;</p>
-        <p>positon: absolute;</p>
-        <p>positon: fixed;</p>
+        <h2>定位</h2>
+      </section>
+
+      <section>
+        <h3>Relative</h3>
+        <h3>Absolute</h3>
+        <h3>Fixed</h3>
       </section>
     </section>
 
     <section>
       <section>
-        <h3>浮动</h3>
+        <h2>浮动</h2>
+      </section>
+
+      <section>
+        <h3>如何浮动</h3>
         <p>float: left;</p>
         <p>float: right;</p>  
       </section>
+
+      <section>
+        <h3>浮动的问题</h3>
+        <p>如何解决</p>
+      </section>
     </section>
 
     <section>
-        <img src="images/reading.jpeg" alt="" width="240">
+      <section>
+        <h2>CSS如何组织</h2>  
+      </section>
+
+      <section>
+        <h3>BEM</h3>
+      </section>
     </section>
 
     <section>
-      <h3>The end</h3>
-      <div>Q & A</div>
+      <h2>Try It Yourself</h2>
     </section>
-
-    <section>
-      <h3>CSS示例</h3>
-      <div class="text-code-middle">
-              <em>width: </em><span>300px;</span><br>  
-              <em>background: </em><span>green;</span><br>  
-              <em>color: </em><span>blue;</span><br>  
-              <em>font-size: </em><span>14px;</span><br>  
-              <em>margin: </em><span>20px;</span><br>  
-              <em>padding: </em><span>10px;</span><br>
-              <em>float: </em><span>left;</span><br>
-              <em>display: </em><span>block;</span><br>
-              <em>border: </em><span>1px solid #000000;</span>
-        </div>  
-      
-    </section>
+    
   </div>
 </div>
 
